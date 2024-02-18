@@ -34,7 +34,11 @@
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="button button -ghost lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -75,7 +79,7 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn text-xl font-bold text-green-500"
+            <a class="button text-xl font-bold text-green-500"
               >Bus <img class="w-6" src="./images/bus-icon.png" alt=""
             /></a>
           </div>
@@ -92,12 +96,12 @@
             <div class="">
               <h1 class="mb-5 text-2xl lg:text-6xl text-white font-bold">
                 End-to-End Travel with <br />
-                <span class="primary-color">P Paribahan</span>
+                <span class="text-green-400">P Paribahan</span>
               </h1>
               <p class="mb-5 text-[18px] text-white">
                 Here we are for helping you to find your bus ticket easily
               </p>
-              <button class="btn bg-green-500 border-none">
+              <button class="button bg-green-500 border-none">
                 <a href="index.html#ticket-section" class="font-bold text-xl"
                   >Buy Tickets</a
                 >
@@ -151,7 +155,7 @@
         </div>
         <div class="section-end flex items-center justify-center">
           <button
-            class="btn border-green-400 text-green-400 bg-transparent text-xl font-bold"
+            class="button border-green-400 text-green-400 bg-transparent text-xl font-bold"
           >
             See All Coupon
           </button>
@@ -198,12 +202,14 @@
                   <!-- risht -->
                   <div class="">
                     <button
-                      class="btn btn-lg w-48 p-4 bg-green-500 bg-opacity-15"
+                      class="button button -lg w-48 p-4 bg-green-500 bg-opacity-15"
                     >
                       <div class="flex gap-2">
                         <img class="w-7" src="images/seat-green.png" alt="" />
-                        <span class="text-lg font-medium text-green-500"
-                          >40 Seats left</span
+                        <span
+                          id="seat-left"
+                          class="text-lg font-medium text-green-500"
+                          >40 seat left</span
                         >
                       </div>
                     </button>
@@ -252,7 +258,7 @@
                 <h2 class="text-[#030712cc] text-[40px] font-semibold">
                   550 Taka
                 </h2>
-                <p class="text-[#03071280] font-medium text-lg">Per Seat</p>
+                <p class="text-[#03071280] font-medium text-lg">Per seat</p>
               </div>
             </div>
           </div>
@@ -265,7 +271,7 @@
             <div class="lg:w-[60%]">
               <div>
                 <div class="font-semibold text-2xl">
-                  <h3 class="text-black">Select Your Seat</h3>
+                  <h3 class="text-black">Select Your seat</h3>
                   <div class="border-y-[2px] border-dashed my-6"></div>
                 </div>
 
@@ -279,13 +285,15 @@
                 </div>
                 <div class="border-y-[2px] border-dashed my-6"></div>
                 <div class="card-actions justify-end mb-6">
-                  <button class="btn btn-lg bg-black bg-opacity-10 px-12 flex">
+                  <button
+                    class="button button -lg bg-black bg-opacity-10 px-12 flex"
+                  >
                     <img class="w-8" src="images/Untitled-2.png" alt="" />
                   </button>
                 </div>
               </div>
 
-              <!-- seat start -->
+              <!-- seat  start -->
               <div class="flex gap-2 lg:gap-12">
                 <div class="grid">
                   <span class="flex items-center">A</span>
@@ -300,52 +308,132 @@
                   <span class="flex items-center">J</span>
                 </div>
                 <div class="flex flex-col gap-4">
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">A1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">B1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">C1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">D1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">E1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">F1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">G1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">H1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">I1</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">J1</kbd>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    A1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    B1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    C1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    D1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    E1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    F1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    G1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    H1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    I1
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    J1
+                  </button>
                 </div>
                 <div class="flex flex-col gap-4">
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">A2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">B2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">C2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">D2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">E2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">F2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">G2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">H2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">I2</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">J2</kbd>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    A2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    B2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    C2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    D2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    E2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    F2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    G2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    H2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    I2
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    J2
+                  </button>
                 </div>
                 <div class="flex flex-col gap-4 lg:ml-20">
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">A3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">B3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">C3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">D3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">E3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">F3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">G3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">H3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">I3</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">J3</kbd>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    A3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    B3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    C3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    D3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    E3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    F3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    G3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    H3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    I3
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    J3
+                  </button>
                 </div>
                 <div class="flex flex-col gap-4">
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">A4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">B4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">C4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">D4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">E4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">F4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">G4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">H4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">I4</kbd>
-                  <kbd class="seat kbd py-4 px-6 lg:px-11">J4</kbd>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    A4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    B4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    C4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    D4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    E4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    F4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    G4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    H4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    I4
+                  </button>
+                  <button class="seat cursor-pointer btn button py-4 px-6 lg:px-11">
+                    J4
+                  </button>
                 </div>
               </div>
 
@@ -356,33 +444,48 @@
             <div class="mt-4 lg:-mt-4 lg:w-[35%]">
               <div>
                 <div class="font-semibold text-2xl">
-                  <h3 class="text-black">Select Your Seat</h3>
+                  <h3 class="text-black">Select Your seat</h3>
                   <div class="border-y-[2px] border-dashed my-6"></div>
                 </div>
               </div>
               <div class="bg-slate-50 p-4 rounded-xl">
                 <div class="">
                   <div class="font-medium text-base flex justify-between">
-                    <h3 class="text-black">Seat</h3>
+                    <h3 class="text-black">
+                      Seat
+                      <span
+                        id="numberOfseatSelect"
+                        class="bg-green-400 rounded-2xl px-2"
+                        >0</span
+                      >
+                    </h3>
                     <h3 class="text-black">Class</h3>
                     <h3 class="text-black">Price</h3>
                   </div>
                   <div class="border-y-[2px] border-dashed my-4"></div>
+                  <div class="font-medium text-base flex justify-between mb-3">
+                    <div id="seatNameContainer"></div>
+                    <div
+                      id="classNameContainer"
+                      class="className text-[#03071299]"
+                    ></div>
+                    <div id="PriceContainer"></div>
+                  </div>
                 </div>
-                <!-- selected seat -->
+                <!-- selected seat  -->
                 <div></div>
 
                 <div class="border-y-[1px] my-4"></div>
                 <div class="flex justify-between font-medium text-base">
                   <h4>Total Price</h4>
-                  <h4>BDT 1100</h4>
+                  <h4>BDT <span id="total-price"></span></h4>
                 </div>
                 <div
                   class="input input-bordere-none rounded-xl w-full h-16 flex justify-between items-center mt-4 mb-6"
                 >
                   <input type="text" placeholder="Have any coupon?" class="" />
                   <button
-                    class="btn rounded-xl h-12 lg:w-28 bg-green-500 text-base font-semibold text-white -mr-2"
+                    class="button rounded-xl h-12 lg:w-28 bg-green-500 text-base font-semibold text-white -mr-2"
                   >
                     Apply
                   </button>
@@ -419,7 +522,7 @@
                   class="input h-16 input-bordered border-black border-opacity-10 input-primary w-full"
                 />
               </div>
-              <button class="btn h-16 w-full my-6 bg-green-400 text-white">
+              <button class="button h-16 w-full my-6 bg-green-400 text-white">
                 Next
               </button>
 
@@ -435,5 +538,7 @@
       <!-- route and seat section end  here  -->
     </main>
     <footer></footer>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
