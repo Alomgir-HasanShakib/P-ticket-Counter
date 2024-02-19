@@ -79,7 +79,7 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="button text-xl font-bold text-green-500"
+            <a class="btn text-xl font-bold text-green-500"
               >Bus <img class="w-6" src="./images/bus-icon.png" alt=""
             /></a>
           </div>
@@ -101,7 +101,7 @@
               <p class="mb-5 text-[18px] text-white">
                 Here we are for helping you to find your bus ticket easily
               </p>
-              <button class="button bg-green-500 border-none">
+              <button class="btn bg-green-500 border-none">
                 <a href="index.html#ticket-section" class="font-bold text-xl"
                   >Buy Tickets</a
                 >
@@ -155,7 +155,7 @@
         </div>
         <div class="section-end flex items-center justify-center">
           <button
-            class="button border-green-400 text-green-400 bg-transparent text-xl font-bold"
+            class="btn border-green-400 text-green-400 bg-transparent text-xl font-bold"
           >
             See All Coupon
           </button>
@@ -285,9 +285,7 @@
                 </div>
                 <div class="border-y-[2px] border-dashed my-6"></div>
                 <div class="card-actions justify-end mb-6">
-                  <button
-                    class="button button -lg bg-black bg-opacity-10 px-12 flex"
-                  >
+                  <button class="btn bg-black bg-opacity-10 px-12 flex">
                     <img class="w-8" src="images/Untitled-2.png" alt="" />
                   </button>
                 </div>
@@ -556,12 +554,20 @@
                 <div></div>
 
                 <div class="border-y-[1px] my-4"></div>
-                <div class="flex justify-between font-medium text-base">
+                <div
+                  class="flex justify-between font-medium text-base inter-font"
+                >
                   <h4>Total Price</h4>
-                  <h4>BDT <span id="total-price"></span></h4>
+                  <h4>BDT <span id="total-price">0</span></h4>
                 </div>
                 <div
-                id="discount-area"
+                  class="flex justify-between font-medium text-base mt-3 inter-font"
+                >
+                  <h4>Discount Price</h4>
+                  <h4>BDT <span id="discount-price">0</span></h4>
+                </div>
+                <div
+                  id="discount-area"
                   class="input input-bordere-none rounded-xl w-full h-16 flex justify-between items-center mt-4 mb-6"
                 >
                   <input
@@ -571,16 +577,18 @@
                     id="input-field"
                   />
                   <button
+                    disabled
                     id="apply-btn"
-                 
-                    class="button rounded-xl h-12 lg:w-28 bg-green-500 text-base font-semibold text-white -mr-2"
+                    class="btn rounded-xl h-12 lg:w-28 text-base font-semibold text-white -mr-2"
                   >
                     Apply
                   </button>
                 </div>
-                <div class="flex justify-between font-medium text-base">
+                <div
+                  class="flex justify-between font-medium text-base inter-font mt-4"
+                >
                   <h4>Grand Total</h4>
-                  <h4 id="grand-total"></h4>
+                  <h4 id="grand-total">0</h4>
                 </div>
               </div>
               <!-- customer detail input form -->
@@ -590,6 +598,7 @@
                 </h3>
                 <input
                   type="text"
+                  required
                   placeholder="Enter your name"
                   class="input h-16 input-bordered border-black border-opacity-10 input-primary w-full"
                 />
@@ -597,7 +606,7 @@
               <div>
                 <h3 class="text-base font-semibold mt-6 mb-4">Phone Number*</h3>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Enter your phone number"
                   class="input h-16 input-bordered border-black border-opacity-10 input-primary w-full"
                 />
@@ -605,14 +614,44 @@
               <div>
                 <h3 class="text-base font-semibold mt-6 mb-4">Email ID</h3>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Enter your email id"
                   class="input h-16 input-bordered border-black border-opacity-10 input-primary w-full"
                 />
               </div>
-              <button class="button h-16 w-full my-6 bg-green-400 text-white">
-                Next
-              </button>
+
+              <a
+                href=""
+                onclick="popups()"
+                class="btn h-16 w-full bg-green-400 text-white border none"
+                id="next-btn-ancor"
+                >Next</a
+              >
+
+              <!-- The button to open modal -->
+              <!-- modal  -->
+
+              <div class="modal" role="dialog" id="my_modal_8">
+                <div class="modal-box text-center">
+                  <div class="flex justify-center items-center">
+                    <img src="./images/success.png" alt="" />
+                  </div>
+                  <h3 class="font-bold text-lg mt-3 text-green-600">SUCCESS</h3>
+                  <p class="py-4">
+                    Thank you for Booking Our Bus Seats. We are working hard to
+                    find the best service and deals for you. Shortly you will
+                    find a confirmation in your email.
+                  </p>
+                  <div class="modal-action flex justify-center">
+                    <a
+                      href="#"
+                      class="btn px-16 bg-green-600 rounded-full text-white"
+                      >Continue</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- modal  -->
 
               <div class="flex justify-between text-black opacity-60">
                 <a class=" ">Terms and Conditions</a>
