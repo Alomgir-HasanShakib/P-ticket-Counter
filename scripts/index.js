@@ -87,12 +87,20 @@ applyBtn.addEventListener("click", function () {
     const discountedPrice = totalPrice - discount;
 
     discountPrice.innerText = discountedPrice;
-
+    const discountShow = document.getElementById("dis-show");
+    discountShow.classList.remove("hidden");
     const inputarea = document.getElementById("discount-area");
     inputarea.classList.add("hidden");
   } else if (inputFieldValue === couponCardFor20) {
     const discount = totalPrice - (totalPrice * 20) / 100;
     grandTotal.innerText = discount;
+    const discountPrice = document.getElementById("discount-price");
+    const discountedPrice = totalPrice - discount;
+    discountPrice.innerText = discountedPrice;
+
+    const discountShow = document.getElementById("dis-show");
+    discountShow.classList.remove("hidden");
+
     const inputarea = document.getElementById("discount-area");
     inputarea.classList.add("hidden");
   } else {
@@ -105,7 +113,7 @@ function popups() {
   const nextBtn = document.getElementById("next-btn");
 
   const nextBtnAcor = document.getElementById("next-btn-ancor");
- 
+
   if (numberOfSeat <= 0) {
     alert("Must buy a ticket for going to next page");
   } else {
