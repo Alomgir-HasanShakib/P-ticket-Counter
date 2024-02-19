@@ -103,9 +103,9 @@ applyBtn.addEventListener("click", function () {
 // modal condition check
 function popups() {
   const nextBtn = document.getElementById("next-btn");
-  console.log(nextBtn, "ajhd");
+
   const nextBtnAcor = document.getElementById("next-btn-ancor");
-  console.log("fgdfgdf", nextBtnAcor);
+ 
   if (numberOfSeat <= 0) {
     alert("Must buy a ticket for going to next page");
   } else {
